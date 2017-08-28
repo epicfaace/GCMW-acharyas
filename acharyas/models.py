@@ -16,13 +16,24 @@ class Centre(models.Model):
         return "%s (%s)" % (self.name, self.country, )
 
 class Acharya(models.Model):
-    profile_id = models.CharField(max_length=100, blank=True)
-    salutation = models.CharField(max_length=100, blank=True)
-    name = models.CharField(max_length=100)
-    dob = models.DateField(blank=True)
+    SALUTATION_CHOICES = [
+        ("Brni", "Brni"),
+        ("Br", "Br"),
+        ("Swami", "Swami"),
+        ("Swamini", "Swamini"),
+    ]
+    profile_id = models.IntegerField(blank=True, null=True)
+    salutation = models.CharField(max_length=100, choices=SALUTATION_CHOICES, blank=True, default='')
+    name = models.CharField(max_length=100, null=False)
+    dob = models.DateField('Date of birth', blank=True, null=True)
     centre = models.ManyToManyField(Centre, related_name='acharya', blank=True)
-    joined_date = models.DateField(blank=True)
-    br_diksha_date = models.DateField(blank=True)
-    trained_under = models.ForeignKey("self")
+    admin_note = models.TextField(blank=True, null=True)
+    biodata = models.TextField(blank=True, null=True)
+    joined_date = models.DateField(blank=True, null=True)
+    br_diksha_date = models.DateField('Brahmachari(ni) diksha date', blank=True, null=True)
+    trained_under = models.ForeignKey("self", blank=True, null=True)
+    chinmaya_id = models.CharField(max_length=15, blank=True, null=True)
     def __str__(self):
-        return self.name
+        return "%s %s" % (self.salutation, self.name,)
+    def get_centres(self):
+        return ", ".join([str(p) for p in self.centre.all()])
