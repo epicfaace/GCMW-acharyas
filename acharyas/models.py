@@ -14,6 +14,8 @@ class Centre(models.Model):
     continent = models.CharField(max_length=100, blank=True)
     def __str__(self):
         return "%s (%s)" % (self.name, self.country, )
+    def get_acharyas(self):
+        return ", ".join([str(p) for p in self.acharya.all()])
 
 class Acharya(models.Model):
     SALUTATION_CHOICES = [
