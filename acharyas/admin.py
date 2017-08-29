@@ -7,10 +7,10 @@ from django.forms import Textarea
 from django.db import models
 
 class AcharyaAdmin(admin.ModelAdmin):
-    list_display = ('__str__', 'get_centres', 'joined_date')
+    list_display = ('__str__', 'centres', 'email')
     fieldsets =  (
         ('Basic info', {
-            'fields': ('salutation', 'name', 'centre', 'biodata')
+            'fields': ('salutation', 'name', 'centre', 'phone_number', 'email', 'biodata')
         }),
         ('Dates', {
             'fields': ('dob', 'joined_date', 'br_diksha_date')

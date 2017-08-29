@@ -1,4 +1,9 @@
+Babel==2.5.0
 Django==1.11.4
 django-countries==4.6.1
+django-multi-email-field==0.5.1
+django-phonenumber-field==1.3.0
 djangorestframework==3.6.4
+phonenumberslite==8.8.0
 pytz==2017.2
+six==1.10.0
