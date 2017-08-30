@@ -1,10 +1,12 @@
 from django.conf.urls import url, include
 from rest_framework import routers
-from .views import AcharyaViewSet, CentreViewSet
+from .views import *
 
 router = routers.DefaultRouter()
 router.register(r'acharyas', AcharyaViewSet)
 router.register(r'centres', CentreViewSet)
+
+router.register(r'acharyaDetail', AcharyaDetailViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

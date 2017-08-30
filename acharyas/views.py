@@ -13,6 +13,12 @@ class AcharyaViewSet(viewsets.ModelViewSet):
     queryset = Acharya.objects.all().order_by('-name')
     serializer_class = AcharyaSerializer
 
+class AcharyaDetailViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows acharya to be viewed or edited.
+    """
+    queryset = Acharya.objects.all().order_by('-name')
+    serializer_class = AcharyaSerializer
 
 class CentreViewSet(viewsets.ModelViewSet):
     """
