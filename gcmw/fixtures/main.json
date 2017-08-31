@@ -1,0 +1,756 @@
+[
+{
+ "model": "acharyas.centre",
+ "pk": 1,
+ "fields": {
+  "name": "Chinmaya Mission San Jose",
+  "address_line_1": "10160 Clayton Road",
+  "city": "San Jose",
+  "state": "CA",
+  "country": "US",
+  "postal_code": "95127"
+ }
+},
+{
+ "model": "acharyas.centre",
+ "pk": 2,
+ "fields": {
+  "name": "Chinmaya Pradeep",
+  "address_line_1": "216/2A Saket Nagar",
+  "city": "Bhopal",
+  "state": "Madhya Pradesh",
+  "country": "IN",
+  "postal_code": "462001"
+ }
+},
+{
+ "model": "acharyas.centre",
+ "pk": 3,
+ "fields": {
+  "name": "Chinmaya Dhara",
+  "address_line_1": "5743 Valley Way",
+  "city": "Niagara Falls",
+  "state": "Ontario",
+  "country": "CA",
+  "postal_code": "L2E 1X7"
+ }
+},
+{
+ "model": "acharyas.centre",
+ "pk": 4,
+ "fields": {
+  "name": "Chinmaya Mission Pittsburgh",
+  "address_line_1": "3817 Northern Pike",
+  "city": "Monroeville",
+  "state": "PA",
+  "country": "GE",
+  "postal_code": ""
+ }
+},
+{
+ "model": "acharyas.acharya",
+ "pk": 1,
+ "fields": {
+  "profile_id": 5,
+  "salutation": "Swami",
+  "name": "Advaitananda",
+  "dob": "1966-10-13",
+  "admin_note": "",
+  "biodata": "Swami Advaitananda, is presently the resident Acharya of Chinmaya Vibhooti, Kolwan. He has served Mission centres like Indore, Allahabad, Kolkata, Durban and Mumbai. Being an outstanding teacher with a depth beneath his simplicity and humility, Swamiji has taught two batches of students  in Vedanta Course in Hindi at  Sidhabari and one batch in  English  at Sandeepany Sadhanalaya, Mumbai as the Acharya -in-charge.%0AEnjjjdowed with a saintly heart overflowing with love and compassion for all and a pleasing personality, he is open to all those who seek his advice. He lives the philosophy he preaches, ever devoted to His Master and the knowledge of the ancient scriptures.",
+  "joined_date": null,
+  "br_diksha_date": "1991-10-08",
+  "trained_under": null,
+  "chinmaya_id": "19661013A",
+  "email": "swamiadvaita@gmail.com",
+  "phone_number": "14082548392",
+  "centre": [
+   1
+  ]
+ }
+},
+{
+ "model": "acharyas.acharya",
+ "pk": 2,
+ "fields": {
+  "profile_id": null,
+  "salutation": "",
+  "name": "Swami Chidananda",
+  "dob": null,
+  "admin_note": "",
+  "biodata": "",
+  "joined_date": null,
+  "br_diksha_date": null,
+  "trained_under": null,
+  "chinmaya_id": null,
+  "email": "",
+  "phone_number": "",
+  "centre": []
+ }
+},
+{
+ "model": "acharyas.acharya",
+ "pk": 3,
+ "fields": {
+  "profile_id": 25,
+  "salutation": "Swami",
+  "name": "Raghavananda",
+  "dob": null,
+  "admin_note": "",
+  "biodata": "",
+  "joined_date": null,
+  "br_diksha_date": "1993-05-23",
+  "trained_under": 2,
+  "chinmaya_id": "19631004JC",
+  "email": "sw.raghavananda@gmail.com",
+  "phone_number": "",
+  "centre": [
+   2
+  ]
+ }
+},
+{
+ "model": "acharyas.acharya",
+ "pk": 4,
+ "fields": {
+  "profile_id": null,
+  "salutation": "Acharya",
+  "name": "Vivek Gupta",
+  "dob": null,
+  "admin_note": "",
+  "biodata": "Having experienced much of what the world has to offer, from studying at the Ivey School of Business to traveling to almost fifty countries, Vivekji still sought more.  Tired of the inconsistent peace associated with extrovert pursuits, he decided to turn his journey within.\r\n\r\nIn 2005 Vivekji was accepted to the intensive residential Vedanta Course at Chinmaya Mission\u2019s Sandeepany Sadhanalaya in India.  There he studied and lived under the guidance of Pujya Swami Tejomayananda for over two years!\r\n\r\nDiscovering that the only purpose of life is to be infinitely, constantly and unconditionally happy, Vivekji continues to explore this purpose by sharing the same with others.\r\n\r\nThrough his innovative and inspired style, Vivekji makes Vedanta relevant, relatable and reachable.  Intrigued that a young-adult born and raised in Canada would walk such an untravelled path, an array of community groups, academic forums, professional associations, medical departments and religious organizations around the world have invited Vivekji to share his insights into the truths of life.",
+  "joined_date": null,
+  "br_diksha_date": null,
+  "trained_under": null,
+  "chinmaya_id": "19810716VG",
+  "email": "vivekgupta@chinmayamission.org",
+  "phone_number": "19053564451",
+  "centre": [
+   3,
+   4
+  ]
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "admin",
+  "model": "logentry"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "auth",
+  "model": "group"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "auth",
+  "model": "permission"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "auth",
+  "model": "user"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "contenttypes",
+  "model": "contenttype"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "sessions",
+  "model": "session"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "acharyas",
+  "model": "centre"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "fields": {
+  "app_label": "acharyas",
+  "model": "acharya"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "0eqgnztxr7vaqpeacd6p5pxta6wkm4t8",
+ "fields": {
+  "session_data": "ZjU5YmY4NDUwZjMwYTdmNmJkMTMyZWY0Y2I1MDliM2I5OGZjNjA0NDp7Il9hdXRoX3VzZXJfaGFzaCI6ImY5ZTA2NzE0ZDUwZmIxODQ2ZjMyZmY2OTkzM2EzMmMwMmIyMDAyODkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+  "expire_date": "2017-09-11T19:13:02.003Z"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "orywzn2kaz8r3o6fbdzog8rbpm2vejhq",
+ "fields": {
+  "session_data": "MTM5NjQ3NjJiYTY0ZTk4ODM3YzJkOTNjNmIwYzk2NjdkMjNlYmNiYTp7Il9hdXRoX3VzZXJfaGFzaCI6ImY5ZTA2NzE0ZDUwZmIxODQ2ZjMyZmY2OTkzM2EzMmMwMmIyMDAyODkiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+  "expire_date": "2017-09-11T21:27:22.653Z"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add log entry",
+  "content_type": 1,
+  "codename": "add_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change log entry",
+  "content_type": 1,
+  "codename": "change_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete log entry",
+  "content_type": 1,
+  "codename": "delete_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add group",
+  "content_type": 2,
+  "codename": "add_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change group",
+  "content_type": 2,
+  "codename": "change_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete group",
+  "content_type": 2,
+  "codename": "delete_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add permission",
+  "content_type": 3,
+  "codename": "add_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change permission",
+  "content_type": 3,
+  "codename": "change_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete permission",
+  "content_type": 3,
+  "codename": "delete_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add user",
+  "content_type": 4,
+  "codename": "add_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change user",
+  "content_type": 4,
+  "codename": "change_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete user",
+  "content_type": 4,
+  "codename": "delete_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add content type",
+  "content_type": 5,
+  "codename": "add_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change content type",
+  "content_type": 5,
+  "codename": "change_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete content type",
+  "content_type": 5,
+  "codename": "delete_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add session",
+  "content_type": 6,
+  "codename": "add_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change session",
+  "content_type": 6,
+  "codename": "change_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete session",
+  "content_type": 6,
+  "codename": "delete_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add centre",
+  "content_type": 7,
+  "codename": "add_centre"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change centre",
+  "content_type": 7,
+  "codename": "change_centre"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete centre",
+  "content_type": 7,
+  "codename": "delete_centre"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can add acharya",
+  "content_type": 8,
+  "codename": "add_acharya"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can change acharya",
+  "content_type": 8,
+  "codename": "change_acharya"
+ }
+},
+{
+ "model": "auth.permission",
+ "fields": {
+  "name": "Can delete acharya",
+  "content_type": 8,
+  "codename": "delete_acharya"
+ }
+},
+{
+ "model": "auth.user",
+ "fields": {
+  "password": "pbkdf2_sha256$36000$SJVwVO0tlqun$WZQvi/adY2bmEelsluS1dQk+PP67ey7clQPOsdKqWq8=",
+  "last_login": "2017-08-28T21:27:22.619Z",
+  "is_superuser": true,
+  "username": "epicfaace",
+  "first_name": "",
+  "last_name": "",
+  "email": "aramaswamis@gmail.com",
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2017-08-28T19:12:58.924Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "fields": {
+  "password": "pbkdf2_sha256$36000$ahp9GokpB64x$7e4rFBuC8K6rJFxVxZY/Kbp9hcjpF9mTShXC0P2FCqw=",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "admin",
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2017-08-29T01:04:23.306Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 1,
+ "fields": {
+  "action_time": "2017-08-28T19:18:01.934Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "1",
+  "object_repr": "Centre object",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 2,
+ "fields": {
+  "action_time": "2017-08-28T20:56:07.563Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Test",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 3,
+ "fields": {
+  "action_time": "2017-08-28T21:06:44.107Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Swami Testananda",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"salutation\", \"name\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 4,
+ "fields": {
+  "action_time": "2017-08-28T21:12:49.240Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Swami Testananda",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"joined_date\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 5,
+ "fields": {
+  "action_time": "2017-08-28T21:29:05.948Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "6",
+  "object_repr": "Swami Test",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 6,
+ "fields": {
+  "action_time": "2017-08-28T21:29:05.986Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "5",
+  "object_repr": "Swami Test",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 7,
+ "fields": {
+  "action_time": "2017-08-28T21:29:06.024Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "4",
+  "object_repr": "Swami Test",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 8,
+ "fields": {
+  "action_time": "2017-08-28T21:29:06.056Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "3",
+  "object_repr": " test",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 9,
+ "fields": {
+  "action_time": "2017-08-28T21:29:06.090Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "2",
+  "object_repr": " test",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 10,
+ "fields": {
+  "action_time": "2017-08-28T22:20:10.583Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Swami Advaitananda",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"name\", \"dob\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 11,
+ "fields": {
+  "action_time": "2017-08-29T00:38:35.894Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Swami Advaitananda",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"phone_number\", \"email\", \"biodata\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 12,
+ "fields": {
+  "action_time": "2017-08-29T00:48:10.345Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Swami Advaitananda",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"phone_number\", \"email\", \"biodata\", \"joined_date\", \"br_diksha_date\", \"chinmaya_id\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 13,
+ "fields": {
+  "action_time": "2017-08-29T00:49:18.577Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Swami Advaitananda",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"phone_number\", \"email\", \"profile_id\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 14,
+ "fields": {
+  "action_time": "2017-08-29T00:50:18.020Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "2",
+  "object_repr": "Chinmaya Pradeep (IN)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 15,
+ "fields": {
+  "action_time": "2017-08-29T00:51:39.243Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "2",
+  "object_repr": " Swami Chidananda",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 16,
+ "fields": {
+  "action_time": "2017-08-29T00:51:43.662Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "3",
+  "object_repr": "Swami Raghavananda",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 17,
+ "fields": {
+  "action_time": "2017-08-29T00:53:24.328Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "3",
+  "object_repr": "Swami Raghavananda",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 18,
+ "fields": {
+  "action_time": "2017-08-29T00:54:57.125Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "3",
+  "object_repr": "Swami Raghavananda",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 19,
+ "fields": {
+  "action_time": "2017-08-29T00:56:25.722Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "3",
+  "object_repr": "Chinmaya Dhara (Ontario, CA)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 20,
+ "fields": {
+  "action_time": "2017-08-29T00:57:51.976Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "4",
+  "object_repr": "Acharya Vivek Gupta",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 21,
+ "fields": {
+  "action_time": "2017-08-29T01:03:49.175Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "4",
+  "object_repr": "Chinmaya Mission Pittsburgh (PA, GE)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 22,
+ "fields": {
+  "action_time": "2017-08-29T01:03:59.212Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "4",
+  "object_repr": "Acharya Vivek Gupta",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 23,
+ "fields": {
+  "action_time": "2017-08-29T01:04:23.598Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "2",
+  "object_repr": "admin",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 24,
+ "fields": {
+  "action_time": "2017-08-29T13:58:34.862Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "5",
+  "object_repr": " Vivek test",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 25,
+ "fields": {
+  "action_time": "2017-08-29T13:59:08.237Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "5",
+  "object_repr": "pitts (, )",
+  "action_flag": 3,
+  "change_message": ""
+ }
+}
+]
