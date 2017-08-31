@@ -7,7 +7,7 @@ Steps for windows:
 pip install virtualenvwrapper
 mkvirtualenv gcmwapp
 workon gcmwapp
-```
+``` 
 
 Then set up requirements:
 `pip install -r requirements.txt`
