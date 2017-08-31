@@ -5,6 +5,9 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .serializers import AcharyaSerializer, CentreSerializer
 from .models import Acharya, Centre
+from django.views import View
+import urllib2
+import json
 
 class AcharyaViewSet(viewsets.ModelViewSet):
     """
@@ -26,3 +29,12 @@ class CentreViewSet(viewsets.ModelViewSet):
     """
     queryset = Centre.objects.all()
     serializer_class = CentreSerializer
+
+class IndexView(View):
+    template_name = "index.html"
+    def get(self, request, *args, **kwargs):
+        url = 'http://localhost:49573/wp-json/gcmw/v1/options'
+        serialized_data = urllib2.urlopen(url).read()
+        headerData = json.loads(serialized_data)
+        context = {'header': headerData}
+        return render(request, self.template_name, context)
